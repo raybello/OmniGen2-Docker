@@ -32,8 +32,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Upgrade pip and install Python dependencies
-RUN pip3 install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.1 --extra-index-url https://download.pytorch.org/whl/cu121 && \
-    pip3 install flash-attn==2.6.1 \
+RUN pip3 install torch==2.6.0 torchvision --extra-index-url https://download.pytorch.org/whl/cu124 && \
+    pip3 install flash-attn==2.7.4.post1 --no-build-isolation && \
     pip3 install -r requirements.txt
 
 RUN if [ "$RUNTIME" = "nvidia" ]; then \
