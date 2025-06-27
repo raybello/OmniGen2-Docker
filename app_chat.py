@@ -864,7 +864,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Run the OmniGen2")
     parser.add_argument("--share", action="store_true", help="Share the Gradio app")
     parser.add_argument(
-        "--port", type=int, default=7860, help="Port to use for the Gradio app"
+        "--port", type=int, default=8118, help="Port to use for the Gradio app"
     )
     parser.add_argument(
         "--model_path",

@@ -1,7 +1,8 @@
-torch==2.6.0
-torchvision==0.21.0
+# torch==2.6.0
+# torchvision==0.21.0
 timm
 einops
+gradio
 accelerate
 transformers==4.51.3
 diffusers
